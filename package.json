@@ -1,0 +1,30 @@
+{
+  "name": "workspace-paths",
+  "version": "1.0.0",
+  "description": "Lists all the npm workspace paths.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reggi/workspace-paths"
+  },
+  "license": "ISC",
+  "author": "reggi",
+  "main": "index.js",
+  "bin": {
+    "workspace-paths": "bin.js"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "style": "prettier --check .",
+    "style:fix": "prettier --write ."
+  },
+  "prettier": "@github/prettier-config",
+  "dependencies": {
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@github/prettier-config": "^0.0.6",
+    "prettier": "^3.2.5"
+  }
+}
